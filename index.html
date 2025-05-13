@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda del Peluquero | NetSysFX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #0f0f0f;
+      color: #00ffe1;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 100px;
+      min-height: 100vh;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 2rem;
+      gap: 1rem;
+      box-shadow: 0 0 10px #00ffe1;
+      animation: pulseLine 2s infinite;
+      z-index: 1000;
+    }
+    @keyframes pulseLine {
+      0% { box-shadow: 0 0 10px #00ffe1; }
+      50% { box-shadow: 0 0 20px #00ffe1, 0 0 30px #00ffe1; }
+      100% { box-shadow: 0 0 10px #00ffe1; }
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 2rem 0 1rem;
+    }
+    .hero {
+      padding: 2rem;
+      max-width: 600px;
+    }
+    .btn {
+      padding: 0.8rem 2rem;
+      background-color: #00ffe1;
+      color: #0f0f0f;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
+      box-shadow: 0 0 10px #00ffe1;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #0f0f0f;
+      color: #00ffe1;
+      border: 1px solid #00ffe1;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 3rem 1rem;
+    }
+    .producto {
+      border: 1px solid #00ffe1;
+      box-shadow: 0 0 10px #00ffe1;
+      max-width: 260px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .producto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00ffe1;
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #1a1a1a;
+      width: 100%;
+      font-size: 0.9rem;
+      color: #c0fefb;
+      box-shadow: 0 -2px 10px #00ffe1;
+      animation: pulseLine 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <span>Inicio</span>
+    <span>Productos</span>
+    <span>Contacto</span>
+  </nav>
+
+  <h1>Tienda del Peluquero</h1>
+  <div class="hero">
+    <p>Productos profesionales para estilistas, barberos y salones de belleza. Compra fácil, rápido y directo al WhatsApp.</p>
+    <a href="https://wa.me/57XXXXXXXXXX" class="btn" target="_blank">¡Cotiza por WhatsApp!</a>
+  </div>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="img/cera-moldeadora.jpg" alt="Cera moldeadora">
+      <h3>Cera Moldeadora</h3>
+      <p>Alta fijación – $25.000 COP</p>
+    </div>
+    <div class="producto">
+      <img src="img/maquina-corte.jpg" alt="Máquina de corte">
+      <h3>Máquina de Corte</h3>
+      <p>Profesional – $220.000 COP</p>
+    </div>
+    <div class="producto">
+      <img src="img/shampoo-barber.jpg" alt="Shampoo barber">
+      <h3>Shampoo Barber</h3>
+      <p>Sin sal – $18.000 COP</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Tienda del Peluquero. Sitio creado por NetSysFX.
+  </footer>
+</body>
+</html>
